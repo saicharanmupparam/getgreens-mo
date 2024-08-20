@@ -4,6 +4,14 @@ interface Props {
 }
 
 const { title } = Astro.props;
+export function getStaticPaths() {
+  return [
+    {params: {index: 'src/pages/index.astro'}},
+    {params: {home: 'src/pages/home.astro'}},
+    {params: {about: 'src/pages/about.astro'}},
+  ];
+}
+
 ---
 
 <!doctype html>
