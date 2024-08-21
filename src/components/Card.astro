@@ -15,9 +15,7 @@ const { href, title, body, src } = Astro.props;
 			{title}
 			<span>&rarr;</span>
 		</h2>
-		<p>
-			{body}
-		</p>
+		<div class={body}></div>
 		<img src={src} alt="" />
 	</a>
 </li>
@@ -64,5 +62,10 @@ const { href, title, body, src } = Astro.props;
 	img {
 		height: calc(100% - 40px);
 		width: 100%;
+	}
+
+	.spider {
+		background-image: url(../../src/assets/indoor/spider.jpg);
+		background-repeat: no-repeat;
 	}
 </style>
