@@ -1,17 +1,18 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import zebra from "../assets/succulant/zebra.jpg";
+import splitrock from "../assets/succulant/splitrock.jpg";
+import debbie from "../assets/succulant/debbie.jpg";
+import iceplant from "../assets/succulant/iceplant.jpg";
 ---
 
 <Layout title="Succulant Plants">
     <div class="list-of-items">
-        <Card title="Zebra" src="../../src/assets/succulant/zebra.jpg" />
-        <Card title="Split Rock" src="../../src/assets/succulant/splitrock.jpg" />
-        <Card
-            title="Debbie"
-            src="../../src/assets/succulant/debbie.jpg"
-        />
-        <Card title="Ice Plant" src="../../src/assets/succulant/iceplant.jpg" />
+        <Card title="Zebra" src={zebra} />
+        <Card title="Split Rock" src={splitrock} />
+        <Card title="Debbie" src={debbie} />
+        <Card title="Ice Plant" src={iceplant} />
     </div>
 </Layout>
 

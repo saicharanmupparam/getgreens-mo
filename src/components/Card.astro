@@ -1,9 +1,11 @@
 ---
+import Picture from 'astro/components/Picture.astro';
+
 interface Props {
 	title: string;
 	body?: string;
 	href?: string;
-	src: string;
+	src: ImageMetadata;
 }
 
 const { href, title, body, src } = Astro.props;
@@ -16,7 +18,7 @@ const { href, title, body, src } = Astro.props;
 			<span>&rarr;</span>
 		</h2>
 		<div class={body}></div>
-		<img src={src} alt="test"/>
+		<Picture src={src} formats={['jpg', 'png']} alt="A description of my image." />
 	</a>
 </li>
 <style>

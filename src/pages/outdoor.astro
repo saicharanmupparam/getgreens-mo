@@ -1,17 +1,18 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import sage from "../assets/outdoor/sage.jpg";
+import lavender from "../assets/outdoor/lavender.jpg";
+import rosemary from "../assets/outdoor/rosemary.jpg";
+import sunflower from "../assets/outdoor/sunflower.jpg";
 ---
 
 <Layout title="Outdoor Plants">
     <div class="list-of-items">
-        <Card title="Sage" src="../../src/assets/outdoor/sage.jpg" />
-        <Card title="Rose Mary" src="../../src/assets/outdoor/rosemary.jpg" />
-        <Card
-            title="Lavender"
-            src="../../src/assets/outdoor/lavender.jpg"
-        />
-        <Card title="Sunflower" src="../../src/assets/outdoor/sunflower.jpg" />
+        <Card title="Sage" src={sage} />
+        <Card title="Rose Mary" src={rosemary} />
+        <Card title="Lavender" src={lavender} />
+        <Card title="Sunflower" src={sunflower} />
     </div>
 </Layout>
 

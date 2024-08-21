@@ -1,25 +1,29 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import fortworth from "../assets/location/fortworth.jpg";
+import nursery from "../assets/location/nursery.jpg";
+import panjaa from "../assets/location/panjaa.jpeg";
+import plano from "../assets/location/plano.jpg";
 ---
 
 <Layout title="Locations">
 	<div class="list-of-items">
 		<Card
 			title="Kolkata"
-			src="../../src/assets/location/panjaa.jpeg"
+			src={panjaa}
 		/>
 		<Card
 			title="Fort Worth"
-			src="../../src/assets/location/fortworth.jpg"
+			src={fortworth}
 		/>
 		<Card
 			title="Plano"
-			src="../../src/assets/location/plano.jpg"
+			src={plano}
 		/>
 		<Card
 			title="Mckinney"
-			src="../../src/assets/location/nursery.jpg"
+			src={nursery}
 		/>
 	</div>
 </Layout>

@@ -1,17 +1,18 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import snake from "../assets/oxygen/snake.jpg";
+import money from "../assets/oxygen/money.jpg";
+import aloe from "../assets/oxygen/aloe.jpg";
+import tulasi from "../assets/oxygen/tulasi.jpg";
 ---
 
 <Layout title="Oxygen Plants">
     <div class="list-of-items">
-        <Card title="Snake Plant" src="../../src/assets/oxygen/snake.jpg" />
-        <Card title="Money Plant" src="../../src/assets/oxygen/money.jpg" />
-        <Card
-            title="Aloe Vera"
-            src="../../src/assets/oxygen/aloe.jpg"
-        />
-        <Card title="Tulasi Plant" src="../../src/assets/oxygen/tulasi.jpg" />
+        <Card title="Snake Plant" src={snake} />
+        <Card title="Money Plant" src={money} />
+        <Card title="Aloe Vera" src={aloe} />
+        <Card title="Tulasi Plant" src={tulasi} />
     </div>
 </Layout>
 
