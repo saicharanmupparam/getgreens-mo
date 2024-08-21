@@ -1,0 +1,30 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Indoor Plants">
+    <div class="list-of-items">
+        <Card title="Spider Plants" src="../../src/assets/indoor/spider.jpg" />
+        <Card title="Corn Plant" src="../../src/assets/indoor/corn.png" />
+        <Card
+            title="Ponytail Palm"
+            src="../../src/assets/indoor/ponytail.jpg"
+        />
+        <Card title="Arrow Head" src="../../src/assets/indoor/arrowhead.jpg" />
+    </div>
+</Layout>
+
+<style lang="scss">
+    img {
+        height: calc(100% - 40px);
+        width: 100%;
+    }
+
+    .list-of-items {
+        height: calc(100vh - 75px);
+        overflow: auto;
+        display: grid;
+        grid-gap: 2rem;
+    }
+</style>

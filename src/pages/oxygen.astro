@@ -1,0 +1,30 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Oxygen Plants">
+    <div class="list-of-items">
+        <Card title="Snake Plant" src="../../src/assets/oxygen/snake.jpg" />
+        <Card title="Money Plant" src="../../src/assets/oxygen/money.jpg" />
+        <Card
+            title="Aloe Vera"
+            src="../../src/assets/oxygen/aloe.jpg"
+        />
+        <Card title="Tulasi Plant" src="../../src/assets/oxygen/tulasi.jpg" />
+    </div>
+</Layout>
+
+<style lang="scss">
+    img {
+        height: calc(100% - 40px);
+        width: 100%;
+    }
+
+    .list-of-items {
+        height: calc(100vh - 75px);
+        overflow: auto;
+        display: grid;
+        grid-gap: 2rem;
+    }
+</style>

@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Get Greens" classes="underlay">
+	<div class="list-of-items">
+		<Card title="Indoor Plants" src="../../src/assets/indoor.jpg" href="/indoor" />
+		<Card
+			title="Outdoor Plants"
+			src="../../src/assets/outdoor.jpg"
+			href="/outdoor"
+		/>
+		<Card title="Oxygen Plants" src="../../src/assets/oxygen.jpg" href="/oxygen" />
+		<Card
+			title="Succulants"
+			src="../../src/assets/succulents.jpg"
+			href="/succulant"
+		/>
+	</div>
+</Layout>
+
+<style lang="scss" is:global>
+	.list-of-items {
+		height: calc(100vh - 75px);
+		overflow: auto;
+		display: grid;
+		grid-gap: 2rem;
+	}
+</style>
